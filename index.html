@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Interactive Web Page</h1>
+        
+        <!-- Event Handling Section -->
+        <section class="event-section">
+            <h2>Event Handling</h2>
+            <button id="clickButton">Click Me!</button>
+            <div id="hoverDiv" class="hover-box">Hover over me!</div>
+            <input type="text" id="keypressInput" placeholder="Type something...">
+            <div id="secretDiv" class="secret-box">Double click me for a surprise!</div>
+        </section>
+
+        <!-- Interactive Elements Section -->
+        <section class="interactive-section">
+            <h2>Interactive Elements</h2>
+            <div class="color-changer">
+                <button id="colorButton">Change Color</button>
+                <div id="colorBox" class="color-box"></div>
+            </div>
+
+            <div class="gallery">
+                <h3>Image Gallery</h3>
+                <div class="gallery-container">
+                    <img src="background.jpg" alt="Gallery Image 1" class="gallery-image">
+                    <img src="Chronomentrophobia.jpeg" alt="Gallery Image 2" class="gallery-image">
+                    <img src="Time Zones In Africa.jpeg" alt="Gallery Image 3" class="gallery-image">
+                </div>
+                <button id="prevBtn">Previous</button>
+                <button id="nextBtn">Next</button>
+            </div>
+
+            <div class="tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="tab1">Tab 1</button>
+                    <button class="tab-btn" data-tab="tab2">Tab 2</button>
+                    <button class="tab-btn" data-tab="tab3">Tab 3</button>
+                </div>
+                <div class="tab-content">
+                    <div id="tab1" class="tab-pane active">Content for Tab 1</div>
+                    <div id="tab2" class="tab-pane">Content for Tab 2</div>
+                    <div id="tab3" class="tab-pane">Content for Tab 3</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form Validation Section -->
+        <section class="form-section">
+            <h2>Form Validation</h2>
+            <form id="validationForm">
+                <div class="form-group">
+                    <label for="name">Name (Required)</label>
+                    <input type="text" id="name" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password (Min 8 characters)</label>
+                    <input type="password" id="password">
+                    <span class="error-message"></span>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
